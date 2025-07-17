@@ -64,5 +64,3 @@ This indicates SYSTEM-level access was achieved remotely.
 In this phase, I maintained persistent access by simulating a reverse shell channel using `wmiexec` and PowerShell TCP client. This completes the Command and Control stage. Screenshots were taken and logs were saved.
 
 ---
-
-Let me know when you’re ready to begin **Phase 7: Actions on Objectives**, where we'll simulate data exfiltration, persistence, and more.
