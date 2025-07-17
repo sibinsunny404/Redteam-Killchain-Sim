@@ -1,6 +1,3 @@
-Sure! Here's your complete **Phase 4: Privilege Escalation** report in a single code block for easy copy-paste:
-
-
 ### Phase 4: Privilege Escalation
 
 MITRE ATT&CK Techniques:
