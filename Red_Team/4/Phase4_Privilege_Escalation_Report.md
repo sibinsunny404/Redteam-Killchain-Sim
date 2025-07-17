@@ -1,9 +1,7 @@
 Sure! Here's your complete **Phase 4: Privilege Escalation** report in a single code block for easy copy-paste:
 
 
-=========================
-Phase 4: Privilege Escalation
-=========================
+### Phase 4: Privilege Escalation
 
 MITRE ATT&CK Techniques:
 - T1003.001 – OS Credential Dumping: LSASS Memory
